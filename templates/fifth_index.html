@@ -1,0 +1,34 @@
+<!--Какие слова чаще пишешь-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<title>Document</title>
+</head>
+<body>
+	<div class="icon">
+		<img src="{% static 'img/Clear.png' %}">
+	</div>
+	<div class="picture_fifth">
+		<img src="{% static 'img/Group 29.png' %}" alt="Wait...">
+	</div>
+	<div class="first_text">
+		<p>Искусственный интеллект <br> проанализирует твои посты <br> и скажет:</p>
+	</div>
+	<div class="main_fifth_text">
+		<p>Какие слова <br> ты используешь в них чаще?</p>
+	</div>
+	<div class="second_fifth_text">
+		<p>блин</p>
+		<p>блестяще</p>
+		<p>агутин</p>
+	</div>
+	<a href="{% url "social:begin" "facebook" %}"><button class="button_3">УЗНАТЬ</button></a>
+	<div class="third_text">
+		<p>*Для анализа, наш алгоритм запросит у вас доступ к вашему аккаунту в Facebook</p>
+	</div>
+</body>
+</html>

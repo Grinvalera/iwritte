@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="photo">
+		<img src="src/media/Group 26.png" alt="photo">
+	</div>
+	<div class="text_1">	
+		<p>Современные технологии покажут:</p>
+	</div>
+	<div class="text_2">	
+		<p>На сколько лучше <br> остальных <br> ты пишешь?</p>
+	</div>
+	<div class="text_3">
+		<p>Узнай о новом приложении первым!</p>
+	</div>
+	<div class="form-control">
+	    <input type="email" id="email" class="email" required>
+	    <label for="login">Введи e-mail</label>
+  	</div>
+	<!-- <form action="" method="post">
+    	<input type="email" id="email" class="email" required>
+    	<label for="login">Введи e-mail</label>
+	</form> -->
+	<div style="text-align: center;" class="button">
+  		<a href="second_index.html" class="grnd" name="button">Сообщить мне</a>
+	</div>
+
+
+</body>
+
+<script>
+	var email = document.querySelector('.email')
+
+	email.addEventListener('input', changeBackground);
+
+	function changeBackground() {
+	  if (email.value !=='') {
+	    document.querySelector('a').style.background = '#3669eb';
+	  } 
+	}
+</script>
+
+
+</html>

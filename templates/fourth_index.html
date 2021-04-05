@@ -1,0 +1,31 @@
+<!--Ты пишешь как Пушкин-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+	<title>Document</title>
+</head>
+<body>
+	<div class="icon">
+		<img src="{% static 'img/Clear.png' %}">
+	</div>
+	<div class="picture">
+		<img src="{% static 'img/1080-1920-Пушкин-и-Бузова_-08_03_21 1.png' %}">
+	</div>
+	<div class="first_text">
+		<p>Искусственный интеллект <br> проанализирует твои посты <br> и скажет:</p>
+	</div>
+	<div class="second_text">
+		<p>Ты пишешь <br> как Пушкин <br> или как Бузова</p>
+	</div>
+	<a href="{% url "social:begin" "facebook" %}"><button class="button_3">УЗНАТЬ</button></a>
+	<div class="third_text">
+		<p>*Для анализа, наш алгоритм запросит у вас доступ к вашему аккаунту в Facebook</p>
+	</div>
+</body>
+</html>

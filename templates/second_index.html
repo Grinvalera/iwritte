@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<title>Document</title>
+</head>
+
+<style>
+	.eclipse img{
+		margin-top: 167px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.text_second_page {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text_second_page p{
+
+		font-family: SF Compact Display;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 32px;
+		line-height: 38px;
+		align-items: center;
+		text-align: center;
+		letter-spacing: -0.02em;
+
+		color: #FFFFFF;
+	}
+</style>
+
+<body>
+	<div class="eclipse">
+		<img src="{% static 'img/Group 27.png' %}">
+	</div>
+	<div class="text_second_page">
+        <p>{{ user.username }}!</p>
+		<p>Приложение еще в разработке,
+            <br> но мы рады что ты проявил интерес.
+            <br> Мы дадим тебе знать, когда оно будет готово.
+        </p>
+	</div>
+</body>
+
+</html>
