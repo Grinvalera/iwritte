@@ -4,11 +4,12 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = '&$lt0#6ujaf12!_7wr#%u7x8b(d$6=er+&9axn1$71_&+hm$c@'
+with open('secret_key.txt') as f:
+    SECRET_KEY = f.read().strip()
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', 'iwrite.fun', '217.25.92.14']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,8 +55,12 @@ WSGI_APPLICATION = 'iwrite_fun.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'iwrite',
+        'USER': 'iwrite_user',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -110,7 +115,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'static/'),
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
