@@ -285,7 +285,7 @@ a{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
+	margin-top: -20px;
 }
 
 .first_text p{
@@ -334,8 +334,8 @@ a{
 	font-family: SF Compact Display;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 12px;
-	line-height: 12px;
+	font-size: 18px;
+	line-height: 20px;
 
 	/* identical to box height */
 	align-items: center;
@@ -378,7 +378,7 @@ a{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .main_fifth_text p{
@@ -423,7 +423,7 @@ a{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 .sixth_text{

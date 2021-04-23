@@ -17,4 +17,5 @@ def second_page(request):
 
 def third_page(request):
     return render(request, 'sixth_index.html')
+
 # Create your views here.

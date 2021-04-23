@@ -4,13 +4,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'img/Group 23.png' %}" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
-	<title>Document</title>
+	<title>Iwrite.fun</title>
 </head>
 <body>
-	<div class="icon">
-		<img src="{% static 'img/Clear.png' %}">
-	</div>
 	<div class="picture_sixth">
 		<img src="{% static 'img/Group 30.png' %}" alt="Wait...">
 	</div>
@@ -20,9 +18,9 @@
 	<div class="sixth_text_2">
 		<p>На сколько лучше <br> остальных <br> ты пишешь?</p>
 	</div>
-	<button class="button_3">УЗНАТЬ</button>
-	<div class="third_text">
-		<p>*Для анализа, наш алгоритм запросит у вас доступ к вашему аккаунту в Facebook</p>
-	</div>
+    <a href="{% url "social:begin" "facebook" %}"><button class="button_3">УЗНАТЬ</button></a>
+    <div class="third_text">
+        <p>*Для анализа, наш алгоритм запросит у вас <br> доступ к вашему аккаунту в Facebook</p>
+    </div>
 </body>
 </html>
